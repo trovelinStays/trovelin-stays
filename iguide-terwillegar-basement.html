@@ -50,8 +50,8 @@ hr.divider { border: none; border-top: 1px solid var(--border); margin: 0 20px; 
 .amenity { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; background: var(--light); border-radius: 10px; padding: 11px 14px; }
 .card { background: #fff; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 18px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
 .card-head { background: var(--teal); color: #fff; padding: 15px 20px; font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
-.card-body { padding: 20px; }
-.card-body .info-row { padding: 13px 0; }
+.card-body { padding: 20px; display: block; }
+.card-body .info-row { padding: 13px 0; display: flex; flex-direction: row; grid-column: 1 / -1; }
 .card-note { background: #FFF3E8; border-left: 3px solid var(--orange); border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: 13px; margin-top: 14px; }
 .card-warn { background: #FEF2F2; border-left: 3px solid #E53E3E; border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: 13px; color: #9B2C2C; margin-top: 14px; }
 .steps { margin-top: 4px; }
@@ -162,7 +162,7 @@ footer .tagline { font-style: italic; color: rgba(255,255,255,0.55); font-size: 
       <div><div class="label">TV & Streaming</div>
       <div class="val">Roku Smart TVs — turn on and enter your checkout date when prompted. System auto-logs out your accounts at checkout. Free channels included, or sign in with your own streaming apps.</div></div>
     </div>
-    <div class="info-row" style="border:none"><div class="info-icon">🌡️</div><div><div class="info-label">Temperature</div><div class="info-val">Smart Ecobee system maintains consistent temperature. If adjustments are needed, message the host.</div></div></div>
+    <div class="info-row" style="border:none"><div class="info-icon">🌡️</div><div><div class="label">Temperature</div><div class="val">Smart Ecobee system maintains consistent temperature. If adjustments are needed, message the host.</div></div></div>
     <div class="info-row" style="border:none"><div class="info-icon">📍</div><div><div class="label">Entrance</div>
     <div class="val">Follow the path along the right side of the house → go down the stairs → enter your code on the side door keypad.</div></div></div>
   </div>
@@ -206,7 +206,7 @@ footer .tagline { font-style: italic; color: rgba(255,255,255,0.55); font-size: 
 <div class="section" id="outdoor">
   <div class="eyebrow">Outside</div>
   <h2 class="section-title">Outdoor Space</h2>
-  <div class="notice">🚫 No access to the backyard, garage, or parking pad — these areas belong to the upper suite.<br>🗑️ Garbage goes in the city bins along the side entrance.</div>
+  <div class="notice">🚫 No access to the backyard, garage, or parking pad — these areas belong to the upper suite.</div>
 </div>
 
 <hr class="divider">
